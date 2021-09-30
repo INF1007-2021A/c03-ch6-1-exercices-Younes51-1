@@ -19,18 +19,18 @@ def order(values: list = None) -> list:
 
 def anagrams(words: list = None) -> bool:
     if words is None:
-        word1=input("Le 1er Mot : ")
-        word2=input("Le 2eme Mot : ")
-        somme_word1=0
-        somme_word2=0
-        for chr in word1 :
-            somme_word1 += ord(chr)
-        for chr in word2 :
-            somme_word2 += ord(chr)
-        if somme_word1==somme_word2 :    
-            return True
-        else :
-            return False
+        somme_words1=0
+        somme_words2=0
+        anagram=False
+        words=[input("entrez le 1mot :"),input("entrez le 2eme mot :")]
+        for chr in words[0] :
+            somme_words1 += ord(chr)
+        for chr in words[1] :
+            somme_words2 += ord(chr)
+    if somme_words1==somme_words2 :
+        anagram=True
+    return anagram
+
 
 
 def contains_doubles(items: list) -> bool:
@@ -57,7 +57,7 @@ def frequence(sentence: str) -> dict:
     for element in sentence :
         if sentence.count(element) >5 :
             List[element]=sentence.count(element)
-        sorted_List=sorted(List.items(),key=lambda x:x[1],reverse=True)
+        sorted_List=sorted(List.items(),reverse=True)
 
     return sorted_List
 

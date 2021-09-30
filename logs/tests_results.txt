@@ -1,23 +1,20 @@
-test_anagram (__main__.TestExercice) ... FAIL
+test_anagram (__main__.TestExercice) ... ERROR
 test_doubles (__main__.TestExercice) ... ok
 test_frequence (__main__.TestExercice) ... FAIL
 test_grades (__main__.TestExercice) ... ok
 test_order (__main__.TestExercice) ... FAIL
 
 ======================================================================
-FAIL: test_anagram (__main__.TestExercice)
+ERROR: test_anagram (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "c:\Users\youne\Documents\GitHub\c03-ch6-1-exercices-Younes51-1\test_exercice.py", line 37, in test_anagram
-    self.assertEqual(
-AssertionError: Lists differ: [None, None] != [True, False]
-
-First differing element 0:
-None
-True
-
-- [None, None]
-+ [True, False] : Erreur dans la vérification de l'anagramme
+  File "c:\Users\youne\Documents\GitHub\c03-ch6-1-exercices-Younes51-1\test_exercice.py", line 35, in test_anagram
+    output = [exercice.anagrams(v) for v in words]
+  File "c:\Users\youne\Documents\GitHub\c03-ch6-1-exercices-Younes51-1\test_exercice.py", line 35, in <listcomp>
+    output = [exercice.anagrams(v) for v in words]
+  File "c:\Users\youne\Documents\GitHub\c03-ch6-1-exercices-Younes51-1\exercice.py", line 30, in anagrams
+    if somme_words1==somme_words2 :
+UnboundLocalError: local variable 'somme_words1' referenced before assignment
 
 ======================================================================
 FAIL: test_frequence (__main__.TestExercice)
@@ -60,17 +57,17 @@ FAIL: test_order (__main__.TestExercice)
 Traceback (most recent call last):
   File "c:\Users\youne\Documents\GitHub\c03-ch6-1-exercices-Younes51-1\test_exercice.py", line 22, in test_order
     self.assertListEqual(
-AssertionError: Lists differ: [[53.0, 53.0, 53.0, 235.0, 253.0, 354.0, 52[95 chars]5.0]] != [[-2, 1, 6, 9], ['2', 'a', 'hello']]
+AssertionError: Lists differ: [[4.0, 5.0, 5.0, 5.0, 6.0, 36.0, 45.0, 45.0[72 chars]5.0]] != [[-2, 1, 6, 9], ['2', 'a', 'hello']]
 
 First differing element 0:
-[53.0, 53.0, 53.0, 235.0, 253.0, 354.0, 523.0, 532.0, 62536.0, 86796.0]
+[4.0, 5.0, 5.0, 5.0, 6.0, 36.0, 45.0, 45.0, 54.0, 65.0]
 [-2, 1, 6, 9]
 
 + [[-2, 1, 6, 9], ['2', 'a', 'hello']]
-- [[53.0, 53.0, 53.0, 235.0, 253.0, 354.0, 523.0, 532.0, 62536.0, 86796.0],
--  [2.0, 4.0, 5.0, 23.0, 54.0, 534.0, 534.0, 5324.0, 5342.0, 3453245.0]] : Mauvais ordre
+- [[4.0, 5.0, 5.0, 5.0, 6.0, 36.0, 45.0, 45.0, 54.0, 65.0],
+-  [45.0, 45.0, 45.0, 45.0, 45.0, 54.0, 54.0, 54.0, 54.0, 445.0]] : Mauvais ordre
 
 ----------------------------------------------------------------------
-Ran 5 tests in 6.758s
+Ran 5 tests in 9.576s
 
-FAILED (failures=3)
+FAILED (failures=2, errors=1)
