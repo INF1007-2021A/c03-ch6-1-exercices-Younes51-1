@@ -57,17 +57,17 @@ FAIL: test_order (__main__.TestExercice)
 Traceback (most recent call last):
   File "c:\Users\youne\Documents\GitHub\c03-ch6-1-exercices-Younes51-1\test_exercice.py", line 22, in test_order
     self.assertListEqual(
-AssertionError: Lists differ: [[4.0, 5.0, 5.0, 5.0, 6.0, 36.0, 45.0, 45.0[72 chars]5.0]] != [[-2, 1, 6, 9], ['2', 'a', 'hello']]
+AssertionError: Lists differ: [[23.0, 24.0, 42.0, 42.0, 42.0, 234.0, 234.[89 chars]4.0]] != [[-2, 1, 6, 9], ['2', 'a', 'hello']]
 
 First differing element 0:
-[4.0, 5.0, 5.0, 5.0, 6.0, 36.0, 45.0, 45.0, 54.0, 65.0]
+[23.0, 24.0, 42.0, 42.0, 42.0, 234.0, 234.0, 423.0, 432.0, 3423.0]
 [-2, 1, 6, 9]
 
 + [[-2, 1, 6, 9], ['2', 'a', 'hello']]
-- [[4.0, 5.0, 5.0, 5.0, 6.0, 36.0, 45.0, 45.0, 54.0, 65.0],
--  [45.0, 45.0, 45.0, 45.0, 45.0, 54.0, 54.0, 54.0, 54.0, 445.0]] : Mauvais ordre
+- [[23.0, 24.0, 42.0, 42.0, 42.0, 234.0, 234.0, 423.0, 432.0, 3423.0],
+-  [23.0, 23.0, 23.0, 34.0, 234.0, 234.0, 234.0, 234.0, 242.0, 4234.0]] : Mauvais ordre
 
 ----------------------------------------------------------------------
-Ran 5 tests in 9.576s
+Ran 5 tests in 10.523s
 
 FAILED (failures=2, errors=1)
