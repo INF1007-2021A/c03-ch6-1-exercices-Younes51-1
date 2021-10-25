@@ -8,11 +8,11 @@ test_order (__main__.TestExercice) ... FAIL
 ERROR: test_anagram (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "c:\Users\youne\Documents\GitHub\c03-ch6-1-exercices-Younes51-1\test_exercice.py", line 35, in test_anagram
+  File "C:\Users\youne\Documents\GitHub\c03-ch6-1-exercices-Younes51-1\test_exercice.py", line 35, in test_anagram
     output = [exercice.anagrams(v) for v in words]
-  File "c:\Users\youne\Documents\GitHub\c03-ch6-1-exercices-Younes51-1\test_exercice.py", line 35, in <listcomp>
+  File "C:\Users\youne\Documents\GitHub\c03-ch6-1-exercices-Younes51-1\test_exercice.py", line 35, in <listcomp>
     output = [exercice.anagrams(v) for v in words]
-  File "c:\Users\youne\Documents\GitHub\c03-ch6-1-exercices-Younes51-1\exercice.py", line 30, in anagrams
+  File "C:\Users\youne\Documents\GitHub\c03-ch6-1-exercices-Younes51-1\exercice.py", line 30, in anagrams
     if somme_words1==somme_words2 :
 UnboundLocalError: local variable 'somme_words1' referenced before assignment
 
@@ -20,15 +20,15 @@ UnboundLocalError: local variable 'somme_words1' referenced before assignment
 FAIL: test_frequence (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "c:\Users\youne\Documents\GitHub\c03-ch6-1-exercices-Younes51-1\test_exercice.py", line 80, in test_frequence
+  File "C:\Users\youne\Documents\GitHub\c03-ch6-1-exercices-Younes51-1\test_exercice.py", line 80, in test_frequence
     self.assertListEqual(
-AssertionError: Lists differ: [[], [('e', 7), ('a', 6)]] != [{'B': 1, 'o': 4, 'n': 2, 'j': 2, 'u': 2, [189 chars]: 1}]
+AssertionError: Lists differ: [[[]], [[('e', 7), ('a', 6)]]] != [{'B': 1, 'o': 4, 'n': 2, 'j': 2, 'u': 2, [189 chars]: 1}]
 
 First differing element 0:
-[]
+[[]]
 {'B': 1, 'o': 4, 'n': 2, 'j': 2, 'u': 2, 'r': 2, ',': 1, ' ': 1, 'b': 1}
 
-- [[], [('e', 7), ('a', 6)]]
+- [[[]], [[('e', 7), ('a', 6)]]]
 + [{' ': 1, ',': 1, 'B': 1, 'b': 1, 'j': 2, 'n': 2, 'o': 4, 'r': 2, 'u': 2},
 +  {' ': 5,
 +   "'": 1,
@@ -55,19 +55,19 @@ First differing element 0:
 FAIL: test_order (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "c:\Users\youne\Documents\GitHub\c03-ch6-1-exercices-Younes51-1\test_exercice.py", line 22, in test_order
+  File "C:\Users\youne\Documents\GitHub\c03-ch6-1-exercices-Younes51-1\test_exercice.py", line 22, in test_order
     self.assertListEqual(
-AssertionError: Lists differ: [[23.0, 24.0, 42.0, 42.0, 42.0, 234.0, 234.[89 chars]4.0]] != [[-2, 1, 6, 9], ['2', 'a', 'hello']]
+AssertionError: Lists differ: [[2.0, 23.0, 34.0, 224.0, 234.0, 234.0, 234[93 chars]4.0]] != [[-2, 1, 6, 9], ['2', 'a', 'hello']]
 
 First differing element 0:
-[23.0, 24.0, 42.0, 42.0, 42.0, 234.0, 234.0, 423.0, 432.0, 3423.0]
+[2.0, 23.0, 34.0, 224.0, 234.0, 234.0, 234.0, 423.0, 542.0, 4234.0]
 [-2, 1, 6, 9]
 
 + [[-2, 1, 6, 9], ['2', 'a', 'hello']]
-- [[23.0, 24.0, 42.0, 42.0, 42.0, 234.0, 234.0, 423.0, 432.0, 3423.0],
--  [23.0, 23.0, 23.0, 34.0, 234.0, 234.0, 234.0, 234.0, 242.0, 4234.0]] : Mauvais ordre
+- [[2.0, 23.0, 34.0, 224.0, 234.0, 234.0, 234.0, 423.0, 542.0, 4234.0],
+-  [234.0, 234.0, 234.0, 234.0, 234.0, 234.0, 234.0, 234.0, 234.0, 234.0]] : Mauvais ordre
 
 ----------------------------------------------------------------------
-Ran 5 tests in 10.523s
+Ran 5 tests in 8.915s
 
 FAILED (failures=2, errors=1)

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
-from typing import List
+from typing import Counter, List
 
 
 def order(values: list = None) -> list:
@@ -53,13 +53,14 @@ def best_grades(student_grades: dict) -> dict:
 def frequence(sentence: str) -> dict:
     # TODO: Afficher les lettres les plus fréquentes
     #       Retourner le tableau de lettres
-    List={}
-    for element in sentence :
-        if sentence.count(element) >5 :
-            List[element]=sentence.count(element)
-        sorted_List=sorted(List.items(),reverse=True)
-
-    return sorted_List
+    liste_de_chiffre=[dict(Counter(sentence))]
+    dictionnaire={}
+    for i in liste_de_chiffre :
+        for cle in i :
+            if i[cle]>5 :
+                dictionnaire[cle]=i[cle]
+    dictionnaire=[sorted(dictionnaire.items(), key=lambda k:k[0],reverse=True)]
+    return dictionnaire
 
 
 def get_recipes():
